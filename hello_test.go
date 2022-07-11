@@ -24,4 +24,11 @@ func TestHello(t *testing.T) {
 
 		checkMessageRight(t, result, expected)
 	})
+
+	t.Run("in spanish", func(t *testing.T) {
+		result := Hello("Murilo", "spanish")
+		expected := "Hola, Murilo!!!"
+
+		checkMessageRight(t, result, expected)
+	})
 }
